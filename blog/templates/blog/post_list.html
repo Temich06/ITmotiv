@@ -4,7 +4,15 @@
     </head>
     <body>
         <div>
-            <h1><a href="/">ITmotiv Blog</a></h1>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+        <div>
+        {% for post in posts %}
+            <p>publishish: {{ published_date }}</p>
+            <h1><a href="">{{ title }}</a></h1>
+            <p>{{ text|linebreaksbr }}</p>
+        </div>
+        {% endfor %}
         </div>
     </body>
 </html>
